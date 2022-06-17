@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family);
+    text-decoration: none;
+}
+
+:root{
+    --primary-red: hsl(0, 100%, 74%);
+    --primary-green: hsl(154, 59%, 51%);
+    --accent-blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%) ;
+    --grayish-blue: hsl(246, 25%, 77%);
+    --white: #ffffff;
+    --input-border: 1px solid hsl(246, 25%, 77%);
+    --input-focus: .5px solid hsl(249, 10%, 26%); 
+    --font-family: 'Poppins', sans-serif; 
+}
+
+.container{
+    width: min(100%, 100vw);
+    min-height: 100vh;
+    padding: 2.2rem 8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("./bg-intro-desktop.png");
+    background-color: var(--primary-red);
+}
+
+.text{
+    color: var(--white);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.text__header{
+    width: 90%;
+}
+
+.text__content{
+    width: 95%;
+    font-size: .8rem;
+}
+
+.btn{
+    padding: .7rem 2rem;
+    width: clamp(200px, 25rem, 370px);
+    cursor: pointer;
+    border: 0;
+    border-radius: 6px;
+}
+
+.reg-form{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.trial-message .btn{
+    background-color: var(--accent-blue);
+    color: var(--white);
+    font-weight: 300;
+    box-shadow: 3px 5px rgba(0, 0, 0, .2);
+}
+
+.trial-message .btn:hover{
+    box-shadow: none;
+    transition: all ease-out 0.3s;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.form{
+    background-color: var(--white);
+    padding: 2.2rem;
+    border-radius: 6px;
+    width: clamp(200px, 25rem, 370px);
+    display: flex;
+    flex-direction: column;
+    gap: .9rem;
+    box-shadow: 3px 5px rgba(0, 0, 0, .2);
+}
+
+.form-input{
+    width: 100%;
+}
+
+input{
+    width: 100%;
+    padding: .6rem 1.1rem;
+    border-radius: 5px;
+    border: var(--input-border);
+}
+
+input::placeholder{
+    font-weight: 540;
+}
+
+input:focus{
+    outline: var(--input-focus);
+}
+
+.submit-btn .btn{
+    width: 100%;
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+.terms{
+    width: 100%;
+    font-size: .5rem;
+    text-align: center;
+    opacity: .7;
+}
+
+.red{
+    color: red;
+    opacity: .7;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 900px){
+    .container{
+        padding: 2rem 2.5rem;
+    }
+}
+
+@media screen and (max-width: 759px) {
+    .container{
+        flex-direction: column;
+        padding: 2rem 1.8rem;
+        place-items: center;
+        gap: 2rem;
+        background-image: url("./bg-intro-mobile.png");
+    }
+
+    .text{
+        width: 90%;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .btn{
+        width: 100%;
+        padding: .7rem .9rem;
+    }
+
+    .form{
+        width: 100%;
+    }
+}

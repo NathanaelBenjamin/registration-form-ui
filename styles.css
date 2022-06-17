@@ -105,7 +105,8 @@ input::placeholder{
 }
 
 input:focus{
-    outline: var(--input-focus);
+    outline: 0;
+    border: var(--input-focus);
 }
 
 .submit-btn .btn{

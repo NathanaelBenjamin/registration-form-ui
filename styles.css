@@ -17,6 +17,8 @@
     --white: #ffffff;
     --input-border: 1px solid hsl(246, 25%, 77%);
     --input-focus: .5px solid hsl(249, 10%, 26%); 
+    --error-border: 1px solid hsl(0, 100%, 74%);
+    --success-border: 1px solid hsl(154, 59%, 51%);
     --font-family: 'Poppins', sans-serif; 
 }
 
@@ -54,6 +56,27 @@
     cursor: pointer;
     border: 0;
     border-radius: 6px;
+}
+
+.error{
+    border: var(--error-border);
+    border-radius: 5px;
+}
+
+.success{
+    border: var(--success-border);
+}
+
+.feedback{
+    color: var(--primary-green);
+    align-self: center;
+    display: none;
+}
+
+small{
+    color: var(--primary-red);
+    display: none;
+    margin: .5rem 0;
 }
 
 .reg-form{

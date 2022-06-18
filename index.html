@@ -31,19 +31,27 @@
 
             <form class="form">
                 <div class="form-input">
-                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="First Name" class="fname">
+                    <small>First name cannot be blank</small>
                 </div>
 
                 <div class="form-input">
-                    <input type="text" placeholder="Last Name">
+                    <input type="text" placeholder="Last Name" class="lname">
+                    <small>Last name cannot be blank</small>
                 </div>
 
                 <div class="form-input">
-                    <input type="email" placeholder="Email Address">
+                    <input type="email" placeholder="Email Address" class="email">
+                    <small>Email cannot be blank</small>
                 </div>
 
                 <div class="form-input">
-                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Password" class="password">
+                    <small>Password cannot be blank</small>
+                </div>
+
+                <div class="feedback">
+                    <p>Registration successful!</p>
                 </div>
 
                 <div class="submit-btn">
@@ -60,5 +68,7 @@
             </form>
         </div>
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>

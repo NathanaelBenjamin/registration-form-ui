@@ -121,10 +121,29 @@ input{
     padding: .6rem 1.1rem;
     border-radius: 5px;
     border: var(--input-border);
+    position: relative;
 }
 
 input::placeholder{
     font-weight: 540;
+}
+
+.form-input{
+    position: relative;
+}
+
+.error-icon{
+    display: none;
+    position: absolute;
+    z-index: 20;
+    top: .7rem;
+    right: 2rem;
+    width: 2px;
+    height: 2px;
+}
+
+.error-icon img{
+    width: 1.3rem;
 }
 
 input:focus{
